@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "3fbada58-0c2e-4804-bc43-bfb97ea2e9bd",
+		"name": "Partner Login API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2190358"
+	},
+	"item": [
+		{
+			"name": "Set User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"jwe/jws here\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.mantracare.com/partner/user",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mantracare",
+						"com"
+					],
+					"path": [
+						"partner",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
