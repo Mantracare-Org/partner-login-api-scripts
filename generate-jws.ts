@@ -16,7 +16,8 @@ YOUR_PARTNER_PRIVATE_KEY_GOES_HERE
 const PARTNER_KEY_ID = 'YOUR_PARTNER_KEY_ID'; // e.g., 'partner-key-rsa-2024'
 
 // 3. The User Identifier you want to sign in
-const USER_IDENTIFIER = 'test-user-unique-id';
+const USER_IDENTIFIER = 'test-user-unique-id',
+	INVITE_CODE = 'invite-code/program-code';
 
 // ------------------------------------------------------------------
 // GENERATION
@@ -35,8 +36,7 @@ async function generateJWS() {
 		// Define the Payload
 		const payload = {
 			user_identifier: USER_IDENTIFIER,
-			// You can add other claims if agreed upon, e.g., email, name
-			// email: 'user@example.com',
+			invite_code: INVITE_CODE,
 		};
 
 		// Sign the JWT (JWS)
