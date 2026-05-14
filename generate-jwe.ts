@@ -1,4 +1,4 @@
-import { CompactEncrypt, SignJWT, importPKCS8, importSPKI, base64url } from 'jose';
+import { CompactEncrypt, SignJWT, importSPKI } from 'jose';
 import { createPrivateKey, webcrypto } from 'node:crypto';
 
 if (!globalThis.crypto) {

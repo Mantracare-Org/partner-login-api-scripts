@@ -3,19 +3,22 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "bun run tsc --noEmit",
+    "run:aes": "bun run aes-256-gcm.ts",
+    "run:jwe": "bun run generate-jwe.ts",
+    "run:jws": "bun run generate-jws.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.16.1",
     "jose": "^6.1.3"
   },
   "devDependencies": {
     "@types/node": "^25.2.3",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }
